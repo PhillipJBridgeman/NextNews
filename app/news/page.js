@@ -5,7 +5,7 @@ export default function NewsPage() {
     return (
         <>
         <h1>News Page</h1>
-        <ul className={"news-list"}>
+        <ul className="news-list">
             {DUMMY_NEWS.map((item) => (
                 <li key={item.id}>
                     <Link href={`/news/${item.id}`}>
