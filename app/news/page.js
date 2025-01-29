@@ -6,11 +6,11 @@ export default function NewsPage() {
         <>
         <h1>News Page</h1>
         <ul className="news-list">
-            {DUMMY_NEWS.map((item) => (
-                <li key={item.id}>
-                    <Link href={`/news/${item.id}`}>
-                    <img src={`/images/news/${item.image}`} alt={item.title} />
-                    <span>{item.title}</span>
+            {DUMMY_NEWS.map((newsItem) => (
+                <li key={newsItem.id}>
+                    <Link href={`/news/${newsItem.slug}`}>
+                    <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+                    <span>{newsItem.title}</span>
                     </Link>
                 </li>
             ))}
