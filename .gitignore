@@ -1,0 +1,12 @@
+<<<<<<< Updated upstream
+node_modules
+=======
+# Ignore node_modules
+node_modules/
+
+node_modules/*
+
+# Ignore Next.js build output
+.next/
+>>>>>>> Stashed changes
+NextNews
