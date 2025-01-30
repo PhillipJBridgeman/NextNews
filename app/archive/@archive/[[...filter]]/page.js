@@ -27,9 +27,11 @@ export default function FilteredNewsPage( {params} ) {
             <nav>
                 <ul>
                     {links.map(link => {
-                        <li key ={link}>
-                            <Link href={`/archive/${link}`}>{link}</Link>
-                        </li>
+                        return (
+                            <li key={link}>
+                                <Link href={`/archive/${link}`}>{link}</Link>
+                            </li>
+                        );
                     })}
                 </ul>
             </nav>
