@@ -2,7 +2,6 @@ import NavLink from '@/components/nav-link';
 import Link from 'next/link';
 
 export default function MainHeader() {
-  const path = usePathname();
   return (
     <header id="main-header">
       <div id="logo">
@@ -14,7 +13,7 @@ export default function MainHeader() {
             <NavLink href="/news">News</NavLink>
           </li>
           <li>
-            <Link href="/archive" className={path.startsWith('/archive') ? 'active' : undefined }>Archive</Link>
+            <NavLink href="/archive">Archive</NavLink>
           </li>
         </ul>
       </nav>
